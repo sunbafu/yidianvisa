@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>一点签</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_k2gm65pwzsl15rk9.css">
+    <link rel="stylesheet" href="css/visa-common.css">
+    <!-- <link rel="shortcut icon" href="/public/img/favicon.ico"/> -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <link rel="stylesheet" href="css/visa-calendar.css">
+    <link rel="stylesheet" href="css/travel-information.css">
+    <div class="container-fluid bg-white">
+      <div class="row visa-title">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="visa progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 100%;">
+              <div class="progress-item active">
+                <span class="progress-num">1</span>
+                <p class="progress-text">上传资料</p>
+              </div>
+              <div class="progress-item align-center active">
+                <span class="progress-num">2</span>
+                <p class="progress-text">填申请表</p>
+              </div>
+              <div class="progress-item active">
+                <span class="progress-num">3</span>
+                <p class="progress-text">确认订单</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="order-affirm page-bar">
+            <h3>日本旅游签证-全国办理</h3>
+            <p><span class="badge">旅游签证</span> <span class="badge">北京领区</span></p>
+            <ul class="list-unstyled traveller">
+              <li>孙悟空<em>在职人员</em></li>
+              <li>孙大圣<em>学龄前儿童</em></li>
+            </ul>
+            <div class="price">
+              ￥1999 x 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-card">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="mod-item">
+            <ul class="list-group">
+              <li class="list-group-item">
+                  <label for="calendar-input">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="iconfont icon-rili f18"></i></span>
+                      <span class="input-group-addon nopa gray">计划出行日期</span>
+                      <input type="text" id="calendar-input" class="form-control" placeholder="选择出行日期" onfocus="$('#calendar-modal').modal('show')" value="2017-10-01">
+                    </div>
+                  </label>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-item order-affirm">
+            <ul class="list-group">
+              <li class="list-group-item item-title">收货地址</li>
+              <li class="list-group-item">
+                <button type="button" class="btn btn-ghost btn-block radius-o"><i class="iconfont icon-zengjia"></i> 添加收货地址</button>
+              </li>
+              <li class="list-group-item">
+                <a href="" class="adress">
+                  孙大圣<em>13919991999</em>
+                  <p>北京市海淀区回龙观大姐1111号楼2单元大姐大姐大姐</p>
+                  <p class="">dajie@qq.com</p>
+                  <i class="iconfont icon-jinrujiantouxiao valign-middle"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row fixed-bottom">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="row submit-order">
+            <div class="col-xs-6 price">总计：<em>￥3998</em></div>
+            <div class="col-xs-6">
+              <a href="" class="btn btn-block btn-primary radius-o" data-toggle="modal" data-target="#pay-modal">提交订单</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-mod text-center">
+      <!-- <small>没有更多了哦</small> -->
+    </div>
+    <!-- 支付方式模态框 Start -->
+    <div class="modal fade bottom pay-modal" id="pay-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <div class="modal-title text-center" id="myModalLabel">支付方式</div>
+                </div>
+                <div class="modal-body">
+                  <i class="iconfont icon-weixinzhifu2"></i> 微信支付
+                  <i class="iconfont icon-xuanze pull-right"></i>
+                </div>
+                <div class="modal-footer">
+                  <a href="" class="btn btn-block btn-pay" data-toggle="modal" data-target="#pay-modal">立即支付 ￥3899</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 支付方式模态框 End -->
+    
+    <!-- 日历模态框 Start -->
+    <div class="modal calendar fade bottom" id="calendar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <div class="modal-title text-center" id="myModalLabel">选择出行日期</div>
+                  <table class="table">
+                    <tr>
+                      <td>日</td>
+                      <td>一</td>
+                      <td>二</td>
+                      <td>三</td>
+                      <td>四</td>
+                      <td>五</td>
+                      <td>六</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                  <div class="calendar-item text-center day">
+                    <div class="calendar-tit">
+                      2017 年 5 月
+                    </div>
+                    <table class="table">
+                      <tr>
+                        <td></td>
+                        <td class="pass"><span>1</span></td>
+                        <td class="pass"><span>2</span></td>
+                        <td class="pass"><span>3</span></td>
+                        <td class="pass"><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><span>6</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><span>10</span></td>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>14</span></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><span>23</span></td>
+                        <td><span>24</span></td>
+                        <td><span>25</span></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>28</span></td>
+                        <td><span>29</span></td>
+                        <td><span>30</span></td>
+                        <td><span>31</span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                      </tr>
+                    </table>
+
+                    <div class="calendar-tit">
+                      2017 年 6 月
+                    </div>
+                    <table class="table">
+                      <tr>
+                        <td></td>
+                        <td class="active"><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><span>6</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><span>10</span></td>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>14</span></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><span>23</span></td>
+                        <td><span>24</span></td>
+                        <td><span>25</span></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>28</span></td>
+                        <td><span>29</span></td>
+                        <td><span>30</span></td>
+                        <td><span>31</span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                      </tr>
+                    </table>
+
+                    <div class="calendar-tit">
+                      2017 年 7 月
+                    </div>
+                    <table class="table">
+                      <tr>
+                        <td></td>
+                        <td class="active"><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><span>6</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><span>10</span></td>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>14</span></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><span>23</span></td>
+                        <td><span>24</span></td>
+                        <td><span>25</span></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>28</span></td>
+                        <td><span>29</span></td>
+                        <td><span>30</span></td>
+                        <td><span>31</span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                      </tr>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 日历模态框 End -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

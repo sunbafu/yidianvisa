@@ -1,0 +1,29 @@
+
+
+.container-fluid.week{position: fixed;top: 0;width: 100%;text-align: center;background-color: #F5F7FA}
+.container-fluid.week .container{padding-left: 0;padding-right: 0;}
+.container-fluid.week .table{margin-bottom: 0;table-layout:fixed}
+.calendar-item.day .calendar-tit{font-size:18px;font-weight: bold;padding:30px 0 15px;}
+.calendar-item.day .table{table-layout:fixed;border-bottom: 1px solid #E6E9ED;margin-bottom: 0;}
+.calendar-item.day .table td{border: 0;padding: 8px 0;font-size: 16px;vertical-align: middle;}
+.calendar-item.day .table td span{display: inline-block;width:30px;height:30px;line-height: 30px;}
+.calendar-item.day .table td.active{background-color: #fff;}
+.calendar-item.day .table td.active span{background-color: #5369E3;color: #fff;border-radius: 100%;}
+.calendar-item.day .table td.pass{color: #CCD1D9}
+
+.modal.calendar{position: absolute;top:0;left: 0;}
+.modal.calendar.bottom{top:30%;}
+.modal.calendar.bottom.in{padding-left: 0!important;}
+.modal.calendar.bottom.in .modal-dialog{transform:none;}
+.modal.calendar.bottom .modal-title{height: 44px;line-height: 44px;}
+.modal.calendar.bottom .modal-header{position: fixed;width: 100%;/*top:0;*/left:0;z-index: 1024;padding: 0;background-color: #fff;}
+.modal.calendar.bottom .modal-header .close{position: absolute;left:25px;height:44px;width:44px;}
+.modal.calendar.bottom .modal-header .container-fluid{padding-left: 0;padding-right: 15px;}
+.modal.calendar.bottom.in .modal-dialog .modal-header .table{margin-bottom: 0;text-align: center;background-color: #F5F7FA}
+.modal.calendar.bottom.in .modal-dialog .modal-body{padding-top: 80px;}
+/*.modal-backdrop{background-color: transparent;}*/
+.modal.calendar .modal-body .container-fluid{padding-left: 10px;padding-right: 10px;}
+.modal.calendar .modal-body .row [class*="col-"]{padding-left: 0;padding-right: 0;}
+@media (min-width:768px){
+	.modal.calendar.full .modal-header .container-fluid{padding-left: 0;padding-right: 0;}
+}

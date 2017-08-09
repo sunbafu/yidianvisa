@@ -1,0 +1,25 @@
+body{background-color: #F5F7FA}
+.container-fluid{background-color: #fff;padding: 0;}
+.container-fluid.trans{background-color: transparent;}
+.visa-user-top{color: #fff;background-image: -webkit-linear-gradient(152deg, #24c6dc, #756ccf);background-image: linear-gradient(298deg, #24c6dc, #756ccf);}
+.visa-user-top .container{padding: 30px 0;background: url(../img/map-bg.png) no-repeat top center;background-size:130%;}
+@media (min-width:768px){
+	.visa-user-top .container{background-size:80%;padding-top: 0;padding-bottom: 100px;}
+}
+.visa-user-top .icon-yidianvisa-icon{font-size: 68px!important;}
+.visa-user-top .visa-user-id{font-size: 18px;}
+
+.mod-title{margin: 15px 0;}
+.mod-item{/*background-color: #fff;*/border-radius: 5px;}
+.mod-item .list-group{margin-bottom: 15px;}
+.mod-item .list-group-item{padding: 0 15px;border-color: #F5F7FA}
+.mod-item .list-group-item.item-title{color: #AAB2BD}
+.mod-item .list-group-item .input-group{margin: -10px -15px;}
+.mod-item .list-group-item .input-group input, .mod-item .list-group-item .input-group select, .mod-item .list-group-item .input-group .btn, .mod-item .list-group-item .input-group .input-group-addon{height: 50px;padding: 6px 15px;border: none;box-shadow: none;border-radius: 0;background-color: transparent}
+.mod-item .list-group-item .input-group textarea{padding: 6px 15px;border: none;box-shadow: none;border-radius: 0;background-color: transparent}
+.mod-item .list-group-item .input-group select{-webkit-appearance: none;}
+.mod-item .list-group-item .input-group .input-group-addon.gray{color: #AAB2BD}
+.mod-item .list-group-item .input-group .input-group-addon.nopa{padding-left: 0;padding-right: 0;}
+
+.visa-user-item i{color: #AAB2BD;}
+.visa-user-item a{display: block;width: 100%;padding:11px 0;}

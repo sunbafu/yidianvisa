@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>一点签</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_lidl2d5ul1f0qkt9.css">
+    <link rel="stylesheet" href="css/visa-common.css">
+    <link rel="stylesheet" href="css/visa-service.css">
+    <!-- <link rel="shortcut icon" href="/public/img/favicon.ico"/> -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <link rel="stylesheet" href="css/travel-information.css">
+    <div class="container-fluid">
+      <div class="container visa-title">
+        <div class="visa progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 75%;">
+            <div class="progress-item active">
+              <span class="progress-num">1</span>
+              <p class="progress-text">上传资料</p>
+            </div>
+            <div class="progress-item align-center active">
+              <span class="progress-num">2</span>
+              <p class="progress-text">填申请表</p>
+            </div>
+            <div class="progress-item">
+              <span class="progress-num">3</span>
+              <p class="progress-text">确认订单</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mod-title">王梓的申请表</div>
+      <div class="mod-item mt">
+        <div class="panel-group application-form" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading1">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  基本信息
+                  <!--<span class="pull-right text-danger">待填写<i class="iconfont icon-jinrujiantouxiao"></i></span>-->
+                  <span class="pull-right text-primary">已完成</span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+              <div class="panel-body">
+                <div class="panel-body-tit">
+                  个人信息
+                </div>
+                <ul class="list-unstyled input-group-item">
+                  <li><label for="name">姓（中文）</label></li>
+                  <li><input id="name" type="text" class="form-control" placeholder="中文姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名（中文）</li>
+                  <li><input type="text" class="form-control" placeholder="中文名"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>姓（拼音）</li>
+                  <li><input type="text" class="form-control" placeholder="拼音姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名（拼音）</li>
+                  <li><input type="text" class="form-control" placeholder="拼音名"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>曾用名</li>
+                  <li>
+                    <div class="btn-group visa-radio-btn" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 有
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 无
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <!--子问题 Start-->
+                <div class="sub-question">
+                  <ul class="list-unstyled input-group-item">
+                    <li>曾用姓（中文）</li>
+                    <li><input type="text" class="form-control" placeholder="中文曾用姓"></li>
+                  </ul>
+                  <ul class="list-unstyled input-group-item">
+                    <li>曾用名（中文）</li>
+                    <li><input type="text" class="form-control" placeholder="中文曾用名"></li>
+                  </ul>
+                  <ul class="list-unstyled input-group-item">
+                    <li>曾用姓（拼音）</li>
+                    <li><input type="text" class="form-control" placeholder="拼音曾用姓"></li>
+                  </ul>
+                  <ul class="list-unstyled input-group-item">
+                    <li>曾用名（拼音）</li>
+                    <li><input type="text" class="form-control" placeholder="拼音曾用名"></li>
+                  </ul>
+                </div>
+                <!--子问题 End-->
+                <ul class="list-unstyled input-group-item">
+                  <li>性别</li>
+                  <li>
+                    <div class="btn-group visa-radio-btn" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> 男
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 女
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <select class="form-control">
+                      <option value="0">在职人员</option>
+                      <option value="1">自由职业者</option>
+                      <option value="2">退休人员</option>
+                      <option value="3">在校学生</option>
+                      <option value="4">学龄前儿童</option>
+                    </select>
+                  </li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>婚姻状况</li>
+                  <li>
+                    <div class="btn-group visa-radio-btn" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> 未婚
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 已婚
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 离异
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 丧偶
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 分居
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>出生省份</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>身份证号码</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading2">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  家庭成员信息
+                  <span class="pull-right text-danger">待填写<i class="iconfont icon-jinrujiantouxiao"></i></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body">
+                <div class="panel-body-tit">
+                  父亲信息
+                </div>
+                <ul class="list-unstyled input-group-item">
+                  <li>姓（中文）</li>
+                  <li><input type="text" class="form-control" placeholder="中文姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名（中文）</li>
+                  <li><input type="text" class="form-control" placeholder="中文名"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>是否与您同行</li>
+                  <li>
+                    <div class="btn-group visa-radio-btn" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 是
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 否
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>是否有兄弟姐妹</li>
+                  <li>
+                    <div class="btn-group visa-radio-btn" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 是
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 否
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <div class="sub-question">
+                  <ul class="list-unstyled input-group-item">
+                    <li>姓（中文）</li>
+                    <li>孙</li>
+                  </ul>
+                  <ul class="list-unstyled input-group-item">
+                    <li>名（中文）</li>
+                    <li>悟空</li>
+                  </ul>
+                  <a href="" class="btn btn-primary btn-block btn-ghost radius-o" data-toggle="modal" data-target="#addModal">增加</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading3">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  护照信息
+                  <span class="pull-right text-danger">待填写<i class="iconfont icon-jinrujiantouxiao"></i></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body">
+                <ul class="list-unstyled input-group-item">
+                  <li>领区</li>
+                  <li><input type="text" class="form-control arrow" placeholder="选择所在领区"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>出生城市</li>
+                  <li><input type="text" class="form-control" placeholder="选择出生城市"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>姓(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="输入您姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>曾用名</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>性别</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading4">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  职业与通信信息
+                  <span class="pull-right text-danger">待填写<i class="iconfont icon-jinrujiantouxiao"></i></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+              <div class="panel-body">
+                <ul class="list-unstyled input-group-item">
+                  <li>领区</li>
+                  <li><input type="text" class="form-control arrow" placeholder="选择所在领区"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>出生城市</li>
+                  <li><input type="text" class="form-control" placeholder="选择出生城市"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>姓(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="输入您姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>曾用名</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>性别</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--增加新条目模态框 Start-->
+    <div class="modal fade bottom" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <!--<h4 class="modal-title" id="myModalLabel"></h4>-->
+          </div>
+          <div class="modal-body addmodal">
+            <div class="panel-group application-form">
+              <div class="panel-body">
+                <ul class="list-unstyled input-group-item">
+                  <li>姓(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="输入您姓"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>名(拼音)</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>出生日期</li>
+                  <li><input type="text" class="form-control" placeholder="选择出生城市"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>出生城市</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+                <ul class="list-unstyled input-group-item">
+                  <li>与您的关系</li>
+                  <li><input type="text" class="form-control" placeholder="选择所在领取"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-block radius-o">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--增加新条目模态框 End-->
+    <div class="footer-btn-box">
+      <div class="container-fluid trans fixed-bottom">
+        <div class="container">
+          <!-- 如果还有必填项没有正确填写，则显示 保存 按钮 -->
+          <a href="" class="btn btn-block btn-ghost btn-save radius-o">保存</a>
+          <!-- 如果所有必填项都填写正确，则显示 下一步 按钮 -->
+          <!-- <a href="" class="btn btn-block btn-primary radius-o">下一步</a> -->
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

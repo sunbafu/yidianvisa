@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>一点签</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_oqwrjx8qwx4aq0k9.css">
+    <link rel="stylesheet" href="css/visa-common.css">
+    <!-- <link rel="shortcut icon" href="/public/img/favicon.ico"/> -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <link rel="stylesheet" href="css/visa-order.css">
+    <div class="container-fluid order-detail-bar">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <!-- 等待支付 -->
+          <h4 class="text-primary">等待付款</h4>
+          <p class="order-info">付款后由专属签证专员审核整理您的资料</p>
+          <!-- 等待初审 -->
+          <!-- <h4 class="text-primary">待初审</h4>
+          <p class="order-info">等待签证专员审核整理资料</p> -->
+          <!-- 初审未通过 -->
+          <!-- <h4 class="text-primary">初审未通过</h4>
+          <p class="order-info">您提供的部分资料不符合要求，请按照提示重新上传</p>
+          <a href="" class="btn btn-primary radius-o btn-block">重新上传资料</a> -->
+          <!-- 待快递资料 -->
+          <!-- <h4 class="text-primary">待快递资料</h4>
+          <p class="order-info">请按要求将资料快递到如下地址后，填写快递单号</p> -->
+          <!-- 待约签 -->
+          <!-- <h4 class="text-primary">待约签</h4>
+          <p class="order-info">签证专员正在向使馆提交预约申请</p> -->
+          <!-- 待寄回资料 -->
+          <!-- <h4 class="text-primary">待寄回资料</h4>
+          <p class="order-info">签证专员整理后会将资料快递给您</p> -->
+          <!-- 待寄回资料 -->
+          <!-- <h4 class="text-primary">待寄回资料</h4>
+          <p class="order-info">签证专员整理后会将资料快递给您</p> -->
+          <!-- 待面签 -->
+          <!-- <h4 class="text-primary">待面签</h4>
+          <p class="order-info">请按预约时间准时到使馆面签</p> -->
+          <!-- 待采集指纹 -->
+          <!-- <h4 class="text-primary">待采集指纹</h4>
+          <p class="order-info">请按预约时间准时到使馆采集指纹</p> -->
+          <!-- 待送签 -->
+          <!-- <h4 class="text-primary">待送签</h4>
+          <p class="order-info">签证专员会尽快将您的资料送到使馆审核</p> -->
+          <!-- 待出签 -->
+          <!-- <h4 class="text-primary">待出签</h4>
+          <p class="order-info">等待使馆审核，请注意接听使馆电话</p> -->
+          <!-- 已出签 -->
+          <!-- <h4 class="text-primary">已出签</h4>
+          <p class="order-info">已成功出签，祝您旅途愉快</p> -->
+          <!-- 已拒签 -->
+          <!-- <h4 class="text-primary">已拒签</h4> -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="mod-item">
+            <!-- 仅当「待快递资料」状态下出现 Start -->
+            <!-- <ul class="list-group order-list">
+              <li class="list-group-item item-title">邮寄到该地址</li>
+              <li class="list-group-item">
+                <a href="" class="adress">
+                  林二签<em>13919991999</em>
+                  <p class="gray-dark">北京市海淀区回龙观大姐1111号楼2单元大姐大姐大姐</p>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <p><em class="text-dt">快递公司：</em>顺丰快递</p>
+                <p><em class="text-dt">快递单号：</em>329238819392</p>
+                <a href="" class="btn radius-o btn-block btn-ghost">修改</a>
+              </li>
+              <li class="list-group-item">
+                <div class="input-group">
+                  <span class="input-group-addon">快递公司</span>
+                  <input type="text" class="form-control" placeholder="选择快递公司">
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="input-group">
+                  <span class="input-group-addon">快递单号</span>
+                  <input type="text" class="form-control" placeholder="填写快递单号">
+                </div>
+              </li>
+              <li class="list-group-item">
+                <a href="" class="btn btn-primary radius-o btn-block">确定</a>
+              </li>
+            </ul> -->
+            <!-- 仅当「待快递资料」状态下出现 End -->
+            <!-- 仅当「待面签」状态下出现 Start -->
+            <!-- <ul class="list-group order-list">
+              <li class="list-group-item item-title">面签信息</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">面签时间：</em>2017-10-01 11:30</p>
+                <p><em class="text-dt">面签使馆：</em>使馆叫个啥名字</p>
+                <a href="" class="btn radius-o btn-block btn-ghost">查看面签通知书</a>
+              </li>
+              <li class="list-group-item item-title">资料已寄回</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">快递公司：</em>顺丰快递</p>
+                <p><em class="text-dt">快递单号：</em>329238819392</p>
+              </li>
+            </ul> -->
+            <!-- 仅当「待面签」状态下出现 End -->
+            <!-- 仅当「待采集指纹」状态下出现 Start -->
+            <!-- <ul class="list-group order-list">
+              <li class="list-group-item item-title">采集指纹信息</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">采集时间：</em>2017-10-01 11:30</p>
+                <p><em class="text-dt">采集使馆：</em>使馆叫个啥名字</p>
+              </li>
+              <li class="list-group-item item-title">资料已寄回</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">快递公司：</em>顺丰快递</p>
+                <p><em class="text-dt">快递单号：</em>329238819392</p>
+              </li>
+            </ul> -->
+            <!-- 仅当「待采集指纹」状态下出现 End -->
+            <!-- 仅当「已出签」状态下出现 Start -->
+            <!-- <ul class="list-group order-list">
+              <li class="list-group-item item-title">签证已寄回</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">快递公司：</em>顺丰快递</p>
+                <p><em class="text-dt">快递单号：</em>329238819392</p>
+              </li>
+            </ul> -->
+            <!-- 仅当「已出签」状态下出现 End -->
+            <ul class="list-group order-list">
+              <li class="list-group-item item-title">签证信息<small class="pull-right">出行日期：2017-10-10</small></li>
+              <li class="list-group-item">
+                <a href="">
+                  <h5>日本旅游签证-全国办理</h5>
+                  <p><i class="iconfont icon-wode2"></i> 孙悟空<em>在职人员</em></p>
+                  <p><i class="iconfont icon-wode2"></i> 孙大圣<em>学龄前儿童</em></p>
+                </a>
+              </li>
+              <li class="list-group-item item-title">收件地址</li>
+              <li class="list-group-item">
+                <a href="" class="adress">
+                  孙大圣<em>13919991999</em>
+                  <p class="gray-dark">北京市海淀区回龙观大姐1111号楼2单元大姐大姐大姐</p>
+                  <p class="">dajie@qq.com</p>
+                </a>
+              </li>
+              <li class="list-group-item item-title">订单明细</li>
+              <li class="list-group-item">
+                <p><em class="text-dt">订单编号：</em>102938474892</p>
+                <p><em class="text-dt">下单时间：</em>2017-05-30 11:13:00</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-mod text-center">
+      <!-- <small>没有更多了哦</small> -->
+    </div>
+    <!-- 支付按钮 Start 仅当等待支付时 -->
+    <div class="footer-btn-box">
+      <div class="container-fluid fixed-bottom">
+        <div class="container">
+          <div class="row submit-order">
+            <div class="col-xs-6 price">总计：<em>￥3998</em></div>
+            <div class="col-xs-6">
+              <a href="" class="btn btn-block btn-primary radius-o" data-toggle="modal" data-target="#pay-modal">立即支付</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 支付按钮 End 仅当等待支付时 -->
+    <!-- 支付方式模态框 Start -->
+    <div class="modal fade bottom pay-modal" id="pay-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-title text-center" id="myModalLabel">支付方式</div>
+          </div>
+          <div class="modal-body">
+            <i class="iconfont icon-weixinzhifu2"></i> 微信支付
+            <i class="iconfont icon-zhengque pull-right"></i>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-block btn-primary radius-o" data-toggle="modal" data-target="#pay-modal">立即支付 ￥3899</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 支付方式模态框 End -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

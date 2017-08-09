@@ -1,0 +1,45 @@
+body{background-image: url(../img/login-bg.jpg);background-size: cover;}
+/*默认*/
+.brand{position: absolute;top: 15%;width: 100%;text-align: center;color: #fff;}
+/*.brand .fa{font-size: 300%;}*/
+.brand h1{font-size: 40px;}
+.login-mod{position: absolute;bottom:30px;width: 100%;}
+.login-item{padding: 0 30px;}
+.login-item .btn{margin-top: 15px;border-radius: 100px;}
+.login-item .btn-wechat{background-color: #1AAD19;color: #fff;}
+.login-item .btn-phone{border: 1px solid #fff;color: #fff;background-color: rgba(255, 255, 255, 0.1);}
+.login-mod .btn-wechat .iconfont{background-color: rgba(255, 255, 255, 0.1);}
+/*手机号登录*/
+.container.full{padding-left: 0;padding-right: 0;}
+.visa-head{width: 100%;height: 44px;}
+.phone-modal{background-color: #fff;}
+.phone-modal.fade.in .container{height: 100%;}
+.phone-modal .close.back{float: left;width: 44px;height: 44px;opacity: 1;color: rgba(0, 0, 0, 0.5);}
+.phone-modal .close.back:hover{color: rgba(0, 0, 0, 0.8);}
+/*.phone-modal.fade .modal-dialog{transform: translate(0, 0);}*/
+.login-title{margin-top: 10px;margin-bottom: 5px;font-weight: normal;}
+.login-info{color: rgba(0, 0, 0, 0.3);}
+.login-info .iconfont{color: #1AAD19;}
+.phone-mod{padding:30px;text-align: center;}
+.phone-mod .login-form{padding:15px 0;}
+.phone-mod .input-group{background-color: #fff;margin:15px 0;}
+.phone-mod .input-group .input-group-addon{background-color: transparent;border-radius: 100px 0 0 100px;border-color: #E6E9ED;}
+.phone-mod .input-group .form-control{height: 44px;background-color: transparent;border-left-width: 0;box-shadow: none;padding-left: 0;border-color: #E6E9ED;}
+.phone-mod .input-group .form-control:focus{outline: none;border-color: #E6E9ED;}
+.phone-mod .input-group .form-control.bro{border-radius: 0 100px 100px 0}
+.phone-mod .input-group .btn{padding: 11px 12px;border-radius: 0 100px 100px 0;color: #5369E3;border-color: #E6E9ED;}
+.phone-mod .input-group .btn label{margin-bottom: 0;}
+
+
+.phone-mod .phone{margin-top: 30px;}
+/*.phone-mod .icon-phone{font-size: 380%!important}*/
+/*.phone-mod .input-phone{display: block;background-color: transparent;border-width: 0 0 1px;text-align: center;font-size: 26px;width: 180px;margin: 0 auto;}*/
+.phone-mod .btn-phone{border-radius: 100px;padding: 8px 30px;margin-top: 15px;}
+/*输入验证码*/
+.code{}
+.input-code{background-color: transparent;border: none;}
+.input-code:focus{outline: none;}
+.input-code-bg{display: table;width: 176px;}
+.input-code-bg .code-box{display: table-cell;width: 1%;height: 44px;border: 1px solid rgba(0, 0, 0, 0.1);margin:0 1px;}
+
+.phone-mod .warning{margin: 10px 0;height: 20px;}

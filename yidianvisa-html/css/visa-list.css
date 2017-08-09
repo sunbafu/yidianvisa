@@ -1,0 +1,94 @@
+body{background-color: #f5f5f5;}
+.container-fluid{padding-left: 20px;padding-right: 20px;}
+.row{margin-left: -20px;margin-right: -20px;}
+.row [class*="col-"]{padding-left: 20px;padding-right: 20px;}
+
+/*路径导航*/
+.breadcrumb{padding:15px 0;background-color: transparent;margin-bottom: 0;color:#fff;display:none;}
+.visa-list-top{color: #fff;padding-left:0;padding-right:0;background-color:#fff;}
+.visa-list-top .row{margin-left: 0;margin-right: 0}
+.visa-list-top .row [class*="col-"]{padding-left: 0;padding-right: 0;}
+.visa-list-top .visa-list-top-item{position:relative;z-index: 999;text-align: center;left:50%;top:50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.visa-list-top .visa-list-top-item h1{text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);margin: 0;}
+.visa-list-top .visa-list-top-item h1 .small{color: #fff;}
+.visa-list-top .visa-list-top-item .select-btn{display: inline-block;padding: 12px 20px;background-color: rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.6);border-radius: 100px;box-shadow: 0 0 8px 0 rgba(0,0,0,.08);color:#fff;}
+@media (min-width:768px){
+	.breadcrumb{display: block;}
+	.visa-list-top{padding: 20px;}
+	.visa-list-top .thumb-169{padding-bottom:35%;border-radius: 6px;}
+}
+
+/*选择长期居住地*/
+.visa-country-list{margin-top:0;padding-left: 0!important;}
+.modal.visa-country-list .modal-dialog{margin:0;transform: translate(10%, 0);width: 100%;}
+.modal.visa-country-list .modal-dialog .modal-content{border: none;border-radius: 0;}
+.modal.visa-country-list.in .modal-dialog{transform: translate(0, 0);}
+/*.modal.full.in .modal-dialog .modal-body{padding: 60px 0 0;}*/
+.modal.visa-country-list, .modal.visa-country-list .modal-dialog, .modal.visa-country-list .modal-dialog .modal-content{height: 100%;}
+.fade{transition: none;}
+.visa-country-list a.title{display: block;padding: 12px 0;background-color: #fff;border-radius: 100px;box-shadow: 0 0 8px 0 rgba(0,0,0,.08);}
+/*选择长期居住地 国家列表*/
+.visa-country-list .list{margin-left: 0;}
+.visa-country-list .list li{width: 23.6%;padding:3px 0;margin-bottom: 3px;text-align: center;border:1px solid #fff;border-radius: 100px;cursor: pointer;}
+.visa-country-list .list li a{display: block;}
+.visa-country-list .list li.active{position: relative;border:1px solid #5369E3;background-color: #5369E3;color:#fff;}
+.visa-country-list .list li.active a{color: #fff;}
+.visa-country-list .list li.active i{display: inline-block;position: absolute;right: 5px;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.visa-country-list .list li.active i:before{content: "\e69b";}
+.visa-country-list .modal-header{text-align: center;}
+@media (min-width:768px){
+	.visa-country-list{margin-top: 0;padding: 0;border-radius: 5px;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+	.visa-country-list .list{margin-top: 10px;}
+	.visa-country-list .list li{width: 13.65%;}
+	.visa-country-list .modal{display: block;position: static;overflow: visible;}
+	.modal.visa-country-list .modal-dialog{margin: 0;transform: translate(0, -25%);}
+	.visa-country-list .modal.fade .modal-dialog{transform: translate(0, 0);}
+	.visa-country-list .fade{opacity: 1.0}
+	.visa-country-list .modal-content{border: none;box-shadow: none;}
+	.modal.visa-country-list, .modal.visa-country-list .modal-dialog, .modal.visa-country-list .modal-dialog .modal-content{height: auto;}
+}
+/*选择的长期居住地*/
+.visa-country-selected{position:relative;font-size: 24px;font-weight: bold;margin-top: 15px;}
+.visa-country-selected:before, .visa-country-selected:after{display:inline-block;position:relative;top:-8px;content:"";width:30px;height:0px;border-top:1px solid #CACACA;}
+.visa-country-selected:before{right:15px;}
+.visa-country-selected:after{left:15px;}
+
+.mod-title{position:relative;padding:0 20px 15px;margin-left: -20px;margin-right: -20px;font-size:20px;font-weight: bold;color: #000;/*border-bottom: 1px solid #E6E9ED*/}
+.mod-title small{display: block;color: #9B9B9B;font-weight: normal;font-size:14px;}
+.mod-title .mod-more{color: #475BE3;right:0;font-size:12px;}
+.mod-title .mod-more span{font-weight: normal;}
+.mod-title .mod-more .iconfont{font-size:18px!important;display: block;text-align: right;}
+@media (min-width:768px){
+	.mod-title{padding:5px 0 20px;margin-left: 0;margin-right: 0;}
+}
+/*签证列表*/
+.visa-list-item{margin-top: 15px;padding: 15px 0;background-color: #fff;}
+.visa-list-item a{display: block;position: relative;border-bottom: 1px solid #E6E9ED;padding-bottom: 20px;margin-bottom: 20px;text-align: justify;}
+.visa-list-item a:last-child{border-bottom: 0;margin-bottom: 0;}
+.visa-list-item .info-item{display: block;}
+.visa-list-item .info-item .iconfont{position: absolute;right: 15px;top: 0;color: #E6E9ED;font-size: 220%!important;}
+.visa-list-item .info-item h3{font-weight: normal;margin-top: 0;font-size: 18px;line-height: 1.42;color: #222;}
+.visa-list-item .info-item .badge{background-color: transparent;font-weight: normal;border:0.5px solid #CCD1D9;color: #AAB2BD}
+.visa-list-item .info-item p{margin-left: 2px;}
+.visa-list-item .info-item p.validity, .visa-list-item .info-item p.stay{margin-bottom: 0;display: none;}
+.visa-list-item .info-item p em{color: #999;font-style: normal;}
+.visa-list-item .data-item{position: absolute;right: 0;bottom: 12px;text-align: right;}
+.visa-list-item .data-item .price{display:block;font-size: 22px;color: #5369E3;font-weight: bold}
+.visa-list-item .data-item .price sup{font-weight: normal;font-size: 60%;top:-0.4em;}
+.visa-list-item .data-item .btn{float: right;border-radius: 6px;padding:6px 20px;margin-top: -5px;display: none;}
+@media (min-width:768px){
+	/*.visa-list-item{border-radius: 5px;box-shadow: 0 0 4px 0 rgba(0,0,0,.1);}*/
+	/*.visa-list-item a{padding:15px 0;}*/
+	/*.visa-list-item .info-item{padding-left: 20px;}*/
+	.visa-list-item .info-item h3{font-size: 22px;padding-right:25%;}
+	.visa-list-item .info-item p.validity, .visa-list-item .info-item p.stay{display: block;}
+	.visa-list-item .info-item .iconfont{left: 30px;top: 10px;}
+	.visa-list-item .data-item{position: absolute;right: 0;bottom: 20px;}
+	.visa-list-item .data-item .price{font-size: 28px;}
+	.visa-list-item .data-item .price, .visa-list-item .data-item s{display: block;}
+	.visa-list-item .data-item .btn{float: none;margin-top: 5px;display: inline-block;}
+}
