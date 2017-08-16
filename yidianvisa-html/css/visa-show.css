@@ -4,14 +4,14 @@ body{background-color: #f5f5f5;}
 .row{margin-left: -20px;margin-right: -20px;}
 .row [class*="col-"]{padding-left: 20px;padding-right: 20px;}
 @media (min-width:768px){
-	.container-fluid .container{padding-left:20px;padding-right:20px;}
+  .container-fluid .container{padding-left:20px;padding-right:20px;}
 }
 
 .visa-show-top{position:relative;color: #fff;background-image: -webkit-linear-gradient(152deg, #24c6dc, #756ccf);background-image: linear-gradient(298deg, #24c6dc, #756ccf);}
 .visa-show-top .row{padding: 20px 0;background: url(../img/map-bg.png) no-repeat top center;background-size:cover;}
 @media (min-width:768px){
-	.visa-show-top{padding-bottom: 80px;}
-	.visa-show-top .row{background-size:50%;padding-top: 0;}
+  .visa-show-top{padding-bottom: 80px;}
+  .visa-show-top .row{background-size:50%;padding-top: 0;}
 }
 /*路径导航*/
 .breadcrumb{padding:15px 0;background-color: transparent;margin-bottom: 0;color:#fff;text-shadow: 0 0 5px rgba(0, 0, 0, 0.6)}
@@ -29,9 +29,9 @@ body{background-color: #f5f5f5;}
 .visa-title h2.price.smvisi{display: block;}*/
 /*签证价格*/
 /*.visa-title .visa-price-item{
-	position: fixed;bottom: 10px;left: 50%;z-index: 1023;-webkit-transform: translateX(-50%);transform: translateX(-50%);
-	height: 50px;padding: 0 0 0 15px;display: flex;justify-content: center;align-items: center;
-	border-radius: 100px;box-shadow: 0 0 30px 0 rgba(0,0,0,.3);background-color: #5369E3;
+  position: fixed;bottom: 10px;left: 50%;z-index: 1023;-webkit-transform: translateX(-50%);transform: translateX(-50%);
+  height: 50px;padding: 0 0 0 15px;display: flex;justify-content: center;align-items: center;
+  border-radius: 100px;box-shadow: 0 0 30px 0 rgba(0,0,0,.3);background-color: #5369E3;
 }*/
 .visa-title .visa-price-item .price-box{position:absolute;text-align: right;line-height: 1;right:0;bottom:84px;}
 .visa-title .visa-price-item .price-box .tooltip{display: none!important;}
@@ -46,22 +46,22 @@ body{background-color: #f5f5f5;}
 .visa-title .visa-data-item p em{display: block;font-style: normal;font-size :12px;}
 
 @media (min-width:768px){
-	.visa-title{text-align: left;}
-	.visa-title .thumb{margin-top: 0;}
-	.visa-title h2{margin-top: 20px;}
-	.visa-title h2.price.smvisi{display: none;}
-	.visa-title .visa-price-item{position: absolute;bottom: -10px;right: 0;transform: none;
-		display: block;height: auto;padding: 0;
-		text-align: right;font-weight: bold;background-color: transparent;box-shadow: none;border: 0;
-	}
-	.visa-title .visa-price-item .price-box{position: static;display: block;float: none;margin:0;box-shadow: none;line-height: inherit;}
-	.visa-title .visa-price-item .price-box .tooltip{display: block!important;}
-	.visa-title .visa-price-item .price{font-size: 38px;}
-	.visa-title .visa-price-item .price sup{font-weight: normal;top:-0.2em;}
-	.visa-title .visa-price-item s{font-weight: normal;padding-right: 5px;font-size: 14px;}
-	/*.visa-title .btn-visa-transact{position: relative;display: inline-block;background-color: #fff;color: #5369E3;margin-top: 10px;bottom:0;padding: 10px 50px;border-radius: 100px;width: auto;text-shadow: none;font-size: 18px;box-shadow: 0 0 50px 0 rgba(0,0,0,.2);}*/
-	.visa-title .visa-data-item{padding-top: 20px;}
-	.visa-title .visa-data-item p{width: 20%;padding:0 20px;border-left: 1px solid rgba(0, 0, 0, 0.2);border-top:none;}
+  .visa-title{text-align: left;}
+  .visa-title .thumb{margin-top: 0;}
+  .visa-title h2{margin-top: 20px;}
+  .visa-title h2.price.smvisi{display: none;}
+  .visa-title .visa-price-item{position: absolute;bottom: -10px;right: 0;transform: none;
+    display: block;height: auto;padding: 0;
+    text-align: right;font-weight: bold;background-color: transparent;box-shadow: none;border: 0;
+  }
+  .visa-title .visa-price-item .price-box{position: static;display: block;float: none;margin:0;box-shadow: none;line-height: inherit;}
+  .visa-title .visa-price-item .price-box .tooltip{display: block!important;}
+  .visa-title .visa-price-item .price{font-size: 38px;}
+  .visa-title .visa-price-item .price sup{font-weight: normal;top:-0.2em;}
+  .visa-title .visa-price-item s{font-weight: normal;padding-right: 5px;font-size: 14px;}
+  /*.visa-title .btn-visa-transact{position: relative;display: inline-block;background-color: #fff;color: #5369E3;margin-top: 10px;bottom:0;padding: 10px 50px;border-radius: 100px;width: auto;text-shadow: none;font-size: 18px;box-shadow: 0 0 50px 0 rgba(0,0,0,.2);}*/
+  .visa-title .visa-data-item{padding-top: 20px;}
+  .visa-title .visa-data-item p{width: 20%;padding:0 20px;border-left: 1px solid rgba(0, 0, 0, 0.2);border-top:none;}
 }
 
 
@@ -90,24 +90,24 @@ body{background-color: #f5f5f5;}
 .detail-item .detail-item-box.w4{z-index: 7}
 
 @media (min-width:768px){
-	.visa-detail-mod{margin-top: -60px;padding: 0;border-radius: 5px;box-shadow: 0 0 6px 0 rgba(0,0,0,.1);background-color: #fff;}
-	.visa-detail-mod .navbar-wrap{display: block;}
-	.visa-detail-mod .detail-nav{height: 60px;margin-left: 0;margin-right: 0;border-radius: 5px 5px 0 0;}
-	.visa-detail-mod .detail-nav ul{}
-	.visa-detail-mod .detail-nav .nav-pills>li{display: inline-block;width: 20%;}
-	.visa-detail-mod .detail-nav.affix .nav-pills li .iconfont{display: block;}
-	.visa-detail-mod .detail-nav.affix .nav-pills li>a{padding:6px 0;}
-	.detail-item{padding: 0 30px;}
-	.detail-item .detail-item-box{margin-top:-35px;}
-	.detail-item>div{padding-top: 50px;position: relative;margin-top:-35px;}
-	.detail-item>div:first-child{margin-top:-30px;}
-	.detail-item .detail-item-box:last-child .detail-item-con{padding-bottom: 0;}
+  .visa-detail-mod{margin-top: -60px;padding: 0;border-radius: 5px;box-shadow: 0 0 6px 0 rgba(0,0,0,.1);background-color: #fff;}
+  .visa-detail-mod .navbar-wrap{display: block;}
+  .visa-detail-mod .detail-nav{height: 60px;margin-left: 0;margin-right: 0;border-radius: 5px 5px 0 0;}
+  .visa-detail-mod .detail-nav ul{}
+  .visa-detail-mod .detail-nav .nav-pills>li{display: inline-block;width: 20%;}
+  .visa-detail-mod .detail-nav.affix .nav-pills li .iconfont{display: block;}
+  .visa-detail-mod .detail-nav.affix .nav-pills li>a{padding:6px 0;}
+  .detail-item{padding: 0 30px;}
+  .detail-item .detail-item-box{margin-top:-35px;}
+  .detail-item>div{padding-top: 50px;position: relative;margin-top:-35px;}
+  .detail-item>div:first-child{margin-top:-30px;}
+  .detail-item .detail-item-box:last-child .detail-item-con{padding-bottom: 0;}
 }
 @media (min-width: 992px){
-	.visa-detail-mod .detail-nav.affix ul {width: 66.66666667%;margin-left: 16.66666667%;padding-left: 20px;padding-right: 20px;}
+  .visa-detail-mod .detail-nav.affix ul {width: 66.66666667%;margin-left: 16.66666667%;padding-left: 20px;padding-right: 20px;}
 }
 @media (min-width: 1200px){
-	.visa-detail-mod .detail-nav.affix ul {width: 50%;margin-left: 25%;padding-left: 20px;padding-right: 20px;}
+  .visa-detail-mod .detail-nav.affix ul {width: 50%;margin-left: 25%;padding-left: 20px;padding-right: 20px;}
 }
 .detail-item .detail-item-box .detail-item-con{margin-left:-20px;margin-right: -20px;padding:0 20px;background-color: #fff;}
 .detail-item-box .visa-detail-title{padding: 20px 0;font-size: 20px;margin: 0}
@@ -115,9 +115,9 @@ body{background-color: #f5f5f5;}
 .detail-item-box small{color: #999;}
 .detail-item-box small em{font-style: normal;color: #FC6E50}
 @media (min-width:768px){
-	.detail-item .detail-item-box .detail-item-con{margin-left:-30px;margin-right: -30px;padding:30px;border-radius:0 0 5px 5px;border-top: 1px solid #E6E9ED}
-	.detail-item-box .visa-detail-title.hidden-xs{display: block;}
-	.detail-item-box .visa-detail-title small{font-size: 14px;font-weight: normal;}
+  .detail-item .detail-item-box .detail-item-con{margin-left:-30px;margin-right: -30px;padding:30px;border-radius:0 0 5px 5px;border-top: 1px solid #E6E9ED}
+  .detail-item-box .visa-detail-title.hidden-xs{display: block;}
+  .detail-item-box .visa-detail-title small{font-size: 14px;font-weight: normal;}
 }
 /*旅客身份对应的资料*/
 .nav-tabs-slider{margin-left: -20px;margin-right: -20px;border-bottom: 1px solid #E6E9ED;}
@@ -131,18 +131,33 @@ body{background-color: #f5f5f5;}
 .gallery-thumbs .swiper-slide-active .iconfont{color: #5369E3!important;}
 .gallery-thumbs .swiper-slide span{display: block;}
 .gallery-thumbs .swiper-slide .iconfont{display: inline-block;margin: 0 auto;font-size: 120%!important;color: #AAB2BD;}
+/*
+.nav-identity{margin-left: -20px;margin-right: -20px;border-bottom: 1px solid #E6E9ED;}
+.nav-identity.nav-tabs>li {-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;position:relative;text-align: center;padding: 8px 0;}
+.nav-identity.nav-tabs>li a{display: block;border-radius: 6px;}
+.nav-identity.nav-tabs>li.active{border-bottom:2px solid #5369E3;}
+.nav-identity.nav-tabs>li.active a{color: #5369E3;}
+.nav-identity.nav-tabs>li.active .iconfont{color: #5369E3!important;}
+.nav-identity.nav-tabs>li span{display: block;}
+.nav-identity.nav-tabs>li .iconfont{display: inline-block;margin: 0 auto;font-size: 120%!important;color: #AAB2BD;}*/
 /**/
 /*.gallery-thumbs .swiper-slide-active:after, .gallery-thumbs .swiper-slide-active:before{border: 8px solid transparent;border-top: 8px solid #fff;width: 0;height: 0;position: absolute;z-index: 10;content: ' ';left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);
   top: 64px;}
 .gallery-thumbs .swiper-slide-active:before {border-top-color: #FC6E50;top: 65px;}*/
 @media (min-width:768px){
-	.nav-tabs-slider{margin-left: 0;margin-right: 0;border-bottom: 0;border-radius: 10px;}
-	.swiper-wrapper{display: table;transform: translate3d(0px, 0px, 0px)!important;}
-	.gallery-thumbs .swiper-slide{display: table-cell;width: 1%;float:none;padding: 20px 1px!important;}
-	.gallery-thumbs .swiper-slide a{padding: 10px 0;width: 100%;background-color: #f5f5f5;}
-	.gallery-thumbs .swiper-slide-active {font-size:100%;border-bottom: none;}
-	.gallery-thumbs .swiper-slide-active a{background-color: #AAB2BD;color: #fff;}
-	.gallery-thumbs .swiper-slide-active .iconfont{color: #fff!important;}
+  .nav-tabs-slider{margin-left: 0;margin-right: 0;border-bottom: 0;border-radius: 10px;}
+  .swiper-wrapper{display: table;transform: translate3d(0px, 0px, 0px)!important;}
+  .gallery-thumbs .swiper-slide{display: table-cell;width: 1%;float:none;padding: 20px 1px!important;}
+  .gallery-thumbs .swiper-slide a{padding: 10px 0;width: 100%;background-color: #f5f5f5;}
+  .gallery-thumbs .swiper-slide-active {font-size:100%;border-bottom: none;}
+  .gallery-thumbs .swiper-slide-active a{background-color: #AAB2BD;color: #fff;}
+  .gallery-thumbs .swiper-slide-active .iconfont{color: #fff!important;}
+  /*.nav-identity{margin-left: 0;margin-right: 0;border-bottom: 0;border-radius: 10px;}
+  .nav-identity.nav-tabs>li{display: table-cell;width: 1%;float:none;padding: 20px 1px!important;}
+  .nav-identity.nav-tabs>li a{padding: 10px 0;width: 100%;background-color: #f5f5f5;}
+  .nav-identity.nav-tabs>li.active {font-size:100%;border-bottom: none;}
+  .nav-identity.nav-tabs>li.active a{background-color: #AAB2BD;color: #fff;border:none;}
+  .nav-identity.nav-tabs>li.active .iconfont{color: #fff!important;}*/
 }
 
 .tab-identity .info-title{position:relative;display:inline-block;margin: 20px 0 10px;font-size: 18px;font-weight: bold;}
@@ -154,8 +169,8 @@ body{background-color: #f5f5f5;}
 .btn-send{background-color: transparent;border: 1px solid #FC6E50;color: #FC6E50;margin: 20px 0;}
 .btn-send:hover{background-color: #FC6E50;color: #fff;}
 @media (min-width:768px){
-	.info-content .star{position: absolute;left: 0;top: 22px;}
-	.file-name-list li{width:50%;}
+  .info-content .star{position: absolute;left: 0;top: 22px;}
+  .file-name-list li{width:50%;}
 }
 /*签证基本信息*/
 .visa-info-con{padding-bottom: 10px;}
@@ -189,9 +204,9 @@ body{background-color: #f5f5f5;}
 .share-item span{display: block;}
 .visa-enter-bottom{display: none;}
 @media (min-width:768px){
-	.share-item{position: fixed;bottom:0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);z-index: 1024;}
-	.visa-user-enter{right: -225px;bottom:13px;}
-	.visa-home-enter{left: -225px;bottom:13px;}
-	.visa-enter-bottom{display:block;position:fixed;left:0;bottom:0;z-index: 1022;width:100%;height:80px;background-color: #fff;border-top: .5px solid rgba(0,0,0,0.1);}
-	/*.visa-user-enter, .visa-service-enter, .visa-share-enter, .visa-home-enter{position: relative;}*/
+  .share-item{position: fixed;bottom:0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);z-index: 1024;}
+  .visa-user-enter{right: -225px;bottom:13px;}
+  .visa-home-enter{left: -225px;bottom:13px;}
+  .visa-enter-bottom{display:block;position:fixed;left:0;bottom:0;z-index: 1022;width:100%;height:80px;background-color: #fff;border-top: .5px solid rgba(0,0,0,0.1);}
+  /*.visa-user-enter, .visa-service-enter, .visa-share-enter, .visa-home-enter{position: relative;}*/
 }
