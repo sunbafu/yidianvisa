@@ -18,7 +18,7 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-visa-detail" data-offset="110">
     <link rel="stylesheet" href="css/visa-show.css">
     <div class="container-fluid visa-show-top">
       <div class="row">
@@ -68,28 +68,29 @@
               <div class="detail-item-box w1" id="visa-detail-1">
                 <div class="detail-item-con">
                   <h4 class="visa-detail-title hidden-xs">所需材料 <small>带 <em>*</em> 为必需资料，辅助资料尽可能多提供</small></h4>
+                  
                   <!-- 旅客身份对应的资料 Start -->
-                  <ul class="nav nav-tabs nav-identity" role="tablist">
-                    <li role="presentation" class="active"><a href="#worker" aria-controls="worker" role="tab" data-toggle="tab"><i class="iconfont icon-gongwenbaoxian"></i><span>在职人员</span></a></li>
-                    <li role="presentation"><a href="#free" aria-controls="free" role="tab" data-toggle="tab"><i class="iconfont icon-xiuxi"></i><span>自由职业者</span></a></li>
-                    <li role="presentation"><a href="#retired" aria-controls="retired" role="tab" data-toggle="tab"><i class="iconfont icon-retirement"></i><span>退休人员</span></a></li>
-                    <li role="presentation"><a href="#student" aria-controls="student" role="tab" data-toggle="tab"><i class="iconfont icon-shu"></i><span>在校学生</span></a></li>
-                    <li role="presentation"><a href="#baby" aria-controls="baby" role="tab" data-toggle="tab"><i class="iconfont icon-rocking-horse"></i><span>学龄前儿童</span></a></li>
-                  </ul>
+                  <div class="nav-tabs-slider">
+                    <div class="swiper-container gallery-thumbs">
+                      <div class="swiper-wrapper" role="tablist">
+                        <div class="swiper-slide"><a href="#baby" aria-controls="baby" role="tab" data-toggle="tab"><i class="iconfont icon-rocking-horse"></i><span>学龄前儿童</a></div>
+                        <div class="swiper-slide"><a href="#student" aria-controls="student" role="tab" data-toggle="tab"><i class="iconfont icon-shu"></i><span>在校学生</span></a></div>
+                        <div class="swiper-slide"><a href="#worker" aria-controls="worker" role="tab" data-toggle="tab"><i class="iconfont icon-gongwenbaoxian"></i><span>在职人员</span></a></div>
+                        <div class="swiper-slide"><a href="#free" aria-controls="free" role="tab" data-toggle="tab"><i class="iconfont icon-xiuxi"></i><span>自由职业者</span></a></div>
+                        <div class="swiper-slide"><a href="#retired" aria-controls="retired" role="tab" data-toggle="tab"><i class="iconfont icon-retirement"></i><span>退休人员</span></a></div>
+                      </div>
+                    </div>
+                  </div>
                   <!-- Tab panes -->
                   <div class="tab-content tab-identity">
-                    <div data-id="2" role="navidentity" class="tab-pane fade in active" id="worker">
-                      <!-- 在职人员资料 Start -->
-                      <div class="info-title">必需资料</div>
+                    <div data-id="0" role="navidentity" class="tab-pane" id="baby">
+                      <!-- 学龄前儿童资料 Start -->
                       <ul class="file-name-list clearfix">
                         <li><span class="star">*</span>照片（45x45）</li>
                         <li><span class="star">*</span>护照（首页）</li>
                         <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
                         <li><span class="star">*</span>户口本</li>
                         <li><span class="star">*</span>银行流水账单</li>
-                      </ul>
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="订单支付后，需要邮寄给我们的资料">可选资料</div>
-                      <ul class="file-name-list clearfix">
                         <li>照片（45x45）</li>
                         <li>护照（首页）</li>
                         <li>身份证</li>
@@ -97,73 +98,21 @@
                       </ul>
                       
                       <div class="text-center">
-                        <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，可选资料尽可能多提供</div>
-                        <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
-                      </div>
-                      <!-- 在职人员资料 End -->
-                    </div>
-                    <div data-id="3" role="navidentity" class="tab-pane fade" id="free">
-                      <!-- 自由职业者资料 Start -->
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="需要拍摄或扫描的资料，请保证清晰平整">电子版资料4</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
-                        <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
-                        <li><span class="star">*</span>户口本</li>
-                        <li>银行流水账单</li>
-                      </ul>
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="订单支付后，需要邮寄给我们的资料">邮寄资料</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
-                        <li>身份证</li>
-                        <li>户口本</li>
-                      </ul>
-                      
-                      <div class="text-center">
                         <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，辅助资料尽可能多提供</div>
                         <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
                       </div>
-                      <!-- 自由职业者资料 End -->
+                      <!-- 学龄前儿童资料 End -->
                     </div>
-                    <div data-id="4" role="navidentity" class="tab-pane fade" id="retired">
-                      <!-- 退休人员资料 Start -->
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="需要拍摄或扫描的资料，请保证清晰平整">电子版资料5</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
-                        <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
-                        <li><span class="star">*</span>户口本</li>
-                        <li>银行流水账单</li>
-                      </ul>
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="订单支付后，需要邮寄给我们的资料">邮寄资料</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
-                        <li>身份证</li>
-                        <li>户口本</li>
-                      </ul>
-                      
-                      <div class="text-center">
-                        <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，辅助资料尽可能多提供</div>
-                        <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
-                      </div>
-                      <!-- 退休人员资料 End -->
-                    </div>
-                    <div data-id="1" role="navidentity" class="tab-pane fade" id="student">
+                    <div data-id="1" role="navidentity" class="tab-pane" id="student">
                       <!-- 在校学生资料 Start -->
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="需要拍摄或扫描的资料，请保证清晰平整">电子版资料2</div>
                       <ul class="file-name-list clearfix">
                         <li><span class="star">*</span>照片（45x45）</li>
                         <li><span class="star">*</span>护照（首页）</li>
                         <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
                         <li><span class="star">*</span>户口本</li>
-                        <li>银行流水账单</li>
-                      </ul>
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="订单支付后，需要邮寄给我们的资料">邮寄资料</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
+                        <li><span class="star">*</span>银行流水账单</li>
+                        <li>照片（45x45）</li>
+                        <li>护照（首页）</li>
                         <li>身份证</li>
                         <li>户口本</li>
                       </ul>
@@ -174,20 +123,16 @@
                       </div>
                       <!-- 在校学生资料 End -->
                     </div>
-                    <div data-id="0" role="navidentity" class="tab-pane fade" id="baby">
-                      <!-- 学龄前儿童资料 Start -->
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="需要拍摄或扫描的资料，请保证清晰平整">电子版资料1</div>
+                    <div data-id="2" role="navidentity" class="tab-pane fade in active" id="worker">
+                      <!-- 在职人员资料 Start -->
                       <ul class="file-name-list clearfix">
                         <li><span class="star">*</span>照片（45x45）</li>
                         <li><span class="star">*</span>护照（首页）</li>
                         <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
                         <li><span class="star">*</span>户口本</li>
-                        <li>银行流水账单</li>
-                      </ul>
-                      <div class="info-title" data-toggle="tooltip" data-placement="right" title="订单支付后，需要邮寄给我们的资料">邮寄资料</div>
-                      <ul class="file-name-list clearfix">
-                        <li><span class="star">*</span>照片（45x45）</li>
-                        <li><span class="star">*</span>护照（首页）</li>
+                        <li><span class="star">*</span>银行流水账单</li>
+                        <li>照片（45x45）</li>
+                        <li>护照（首页）</li>
                         <li>身份证</li>
                         <li>户口本</li>
                       </ul>
@@ -196,7 +141,47 @@
                         <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，辅助资料尽可能多提供</div>
                         <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
                       </div>
-                      <!-- 学龄前儿童资料 End -->
+                      <!-- 在职人员资料 End -->
+                    </div>
+                    <div data-id="3" role="navidentity" class="tab-pane" id="free">
+                      <!-- 自由职业者资料 Start -->
+                      <ul class="file-name-list clearfix">
+                        <li><span class="star">*</span>照片（45x45）</li>
+                        <li><span class="star">*</span>护照（首页）</li>
+                        <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
+                        <li><span class="star">*</span>户口本</li>
+                        <li><span class="star">*</span>银行流水账单</li>
+                        <li>照片（45x45）</li>
+                        <li>护照（首页）</li>
+                        <li>身份证</li>
+                        <li>户口本</li>
+                      </ul>
+                      
+                      <div class="text-center">
+                        <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，辅助资料尽可能多提供</div>
+                        <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
+                      </div>
+                      <!-- 自由职业者资料 End -->
+                    </div>
+                    <div data-id="4" role="navidentity" class="tab-pane" id="retired">
+                      <!-- 退休人员资料 Start -->
+                      <ul class="file-name-list clearfix">
+                        <li><span class="star">*</span>照片（45x45）</li>
+                        <li><span class="star">*</span>护照（首页）</li>
+                        <li><span class="star">*</span>身份证身份证身份证身份证身份证身份</li>
+                        <li><span class="star">*</span>户口本</li>
+                        <li><span class="star">*</span>银行流水账单</li>
+                        <li>照片（45x45）</li>
+                        <li>护照（首页）</li>
+                        <li>身份证</li>
+                        <li>户口本</li>
+                      </ul>
+                      
+                      <div class="text-center">
+                        <div class="info-content-tips gray small">带 <em>*</em> 为必需资料，辅助资料尽可能多提供</div>
+                        <a href="" class="btn radius-o btn-send">查看资料要求 / 样例</a>
+                      </div>
+                      <!-- 退休人员资料 End -->
                     </div>
                   </div>
                 </div>
@@ -209,6 +194,7 @@
                   <h4 class="visa-detail-title">基本信息</h4>
                   <div class="visa-info-con text-justify">
                     jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。jMe
+                    <img src="https://img8.byecity.com.cn/fs/brs/files/qianzheng/2015-01-27/qianzheng_1422331750_7927.jpg" width="1000" alt="">
                     <dl>
                       <dt>服务包含</dt>
                       <dd>签证咨询+资料审核+签证方案评估+照片处理+签证费代缴+代送取服务</dd>
@@ -224,6 +210,7 @@
                         </ul>
                       </dd>
                     </dl>
+                    <img src="https://img8.byecity.com.cn/fs/brs/files/qianzheng/2015-04-28/qianzheng_1430224348_2454.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -304,6 +291,21 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+    </script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        initialSlide :2,
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 1,
+        slideToClickedSlide: true,
+        onSlideChangeEnd: function(swiper){
+          $(".tab-pane[role='navidentity']").removeClass('in active');
+          $(".tab-pane[data-id='"+swiper.activeIndex+"']").addClass('in active');
+        }
+      });
     </script>
   </body>
 </html>
