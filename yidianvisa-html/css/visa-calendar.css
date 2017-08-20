@@ -12,6 +12,15 @@
 .calendar-item.day .table td.pass{color: #CCD1D9}
 
 .modal.calendar{position: absolute;top:0;left: 0;}
+.modal.calendar.full.in{padding-left: 0!important;}
+.modal.calendar.full.in .modal-dialog{transform:none;}
+.modal.calendar.full .modal-title{height: 64px;line-height: 64px;padding-left: 20px;font-size: 18px;font-weight:bold;text-align: left;}
+.modal.calendar.full .modal-header{position: fixed;width: 100%;/*top:0;*/left:0;z-index: 1024;padding: 0;background-color: #fff;}
+.modal.calendar.full .modal-header .close{position: absolute;right:2px;height:64px;width:64px;color: #fff;}
+.modal.calendar.full .modal-header .container-fluid{padding-left: 0;padding-right: 15px;}
+.modal.calendar.full.in .modal-dialog .modal-header .table{margin-bottom: 0;text-align: center;background-color: #F5F7FA}
+.modal.calendar.full.in .modal-dialog .modal-body{padding-top: 100px;}
+
 .modal.calendar.bottom{top:30%;}
 .modal.calendar.bottom.in{padding-left: 0!important;}
 .modal.calendar.bottom.in .modal-dialog{transform:none;}

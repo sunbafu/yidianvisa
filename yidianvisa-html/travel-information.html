@@ -11,14 +11,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3sdilzyuubu766r.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_286315_27ccbn40brrltyb9.css">
     <link rel="stylesheet" href="css/visa-common.css">
-    <link rel="stylesheet" href="css/visa-service.css">
-    <!-- <link rel="shortcut icon" href="/public/img/favicon.ico"/> -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="/public/js/html5shiv.min.js"></script>
+      <script src="/public/js/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -28,8 +25,17 @@
     <div class="container-fluid bg-white">
       <div class="row visa-title">
         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-          <h3>日本旅游签-北京领区</h3>
-          <p><span class="badge">旅游签证</span> <span class="badge">北京领区</span></p>
+          <div class="media">
+            <div class="media-left media-middle">
+              <span class="thumb thumb-32 visa-thumb">
+                <span class="thumb-img" style="background-image: url(img/thumb/japan.jpg)"></span>
+              </span>
+            </div>
+            <div class="media-body">
+              <h4 class="text-over line1">日本旅游签-北京领区日本旅游签-北京领区日本旅游签-北京领区</h4>
+              <p><span>旅游签证</span> / <span>北京领区</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,11 +44,7 @@
         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
           <div class="mod-item">
             <ul class="list-group">
-              <li class="list-group-item item-title">计划出行日期</li>
-              <li class="list-group-item">
-                <a data-toggle="modal" data-target="#calendar-modal" class="calendar-btn"><span>选择出行日期</span><i class="iconfont icon-rili pull-right"></i></a>
-                <!-- <span class="input-group-addon"></span> -->
-              </li>
+              <li class="list-group-item item-title"><a data-toggle="modal" data-target="#calendar-modal" class="calendar-btn"><span>计划出行日期</span><span class="pull-right">2017-10-01 <i class="iconfont icon-rili"></i></span></a></li>
             </ul>
           </div>
           <div class="mod-item">
@@ -50,36 +52,33 @@
               <li class="list-group-item item-title">申请人信息</li>
               <li class="list-group-item">
                 <div class="input-group">
-                  <span class="input-group-addon">孙大圣</span>
+                  <span class="input-group-addon"><i class="iconfont icon-wode2"></i> 孙大圣</span>
                   <span class="input-group-addon">自由职业者</span>
-                  <input style="width: 1px;">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="iconfont icon-biaodankongjianshanchu icon-danger f18"></i></button>
+                  <span class="input-group-addon">
+                    <button class="btn btn-default" type="button"><i class="iconfont icon-jiandiao icon-danger"></i></button>
                   </span>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="input-group">
-                  <span class="input-group-addon">孙悟空</span>
+                  <span class="input-group-addon"><i class="iconfont icon-wode2"></i> 孙悟空</span>
                   <span class="input-group-addon">在职人员</span>
-                  <input style="width: 1px;">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="iconfont icon-biaodankongjianshanchu icon-danger f18"></i></button>
+                  <span class="input-group-addon">
+                    <button class="btn btn-default" type="button"><i class="iconfont icon-jiandiao icon-danger"></i></button>
                   </span>
                 </div>
               </li>
               <li class="list-group-item">
                 <div class="input-group">
-                  <span class="input-group-addon">孙行者</span>
+                  <span class="input-group-addon"><i class="iconfont icon-wode2"></i> 孙行者</span>
                   <span class="input-group-addon">学龄前儿童</span>
-                  <input style="width: 1px;">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="iconfont icon-biaodankongjianshanchu icon-danger f18"></i></button>
+                  <span class="input-group-addon">
+                    <button class="btn btn-default" type="button"><i class="iconfont icon-jiandiao icon-danger"></i></button>
                   </span>
                 </div>
               </li>
               <li class="list-group-item">
-                <button type="button" class="btn btn-ghost btn-block radius-o"><i class="iconfont icon-zengjia"></i> 添加同行申请人</button>
+                <a href="" class="add-btn"><i class="iconfont icon-iconjia"></i> 增加申请人</a>
               </li>
             </ul>
           </div>
@@ -89,7 +88,7 @@
     <div class="container-fluid">
       <div class="row fixed-bottom">
         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-          <a href="" class="btn btn-block btn-primary radius-o">下一步</a>
+          <a href="" class="btn btn-primary" disabled="disabled">下一步</a>
         </div>
       </div>
     </div>
@@ -97,7 +96,7 @@
       <!-- <small>没有更多了哦</small> -->
     </div>
     <!-- 日历模态框 Start -->
-    <div class="modal calendar fade bottom" id="calendar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal calendar fade full" id="calendar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">

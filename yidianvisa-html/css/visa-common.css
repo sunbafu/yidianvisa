@@ -40,10 +40,10 @@ input, textarea{-webkit-appearance: none!important;}
 input[type="radio"]{-webkit-appearance: radio!important;}
 input[type="checkbox"]{-webkit-appearance: checkbox!important;}
 /* 焦点placeholder颜色 */
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#CCD1D9!important; }
-input::-moz-placeholder, textarea::-moz-placeholder { color:#CCD1D9!important; }
-input::-moz-placeholder, textarea::-moz-placeholder { color:#CCD1D9!important; }
-input::-ms-input-placeholder, textarea::-ms-input-placeholder { color:#CCD1D9!important; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#999!important; }
+input::-moz-placeholder, textarea::-moz-placeholder { color:#999!important; }
+input::-moz-placeholder, textarea::-moz-placeholder { color:#999!important; }
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { color:#999!important; }
 /* 焦点placeholder消失 */
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { color:transparent!important; }
 input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { color:transparent!important; }
@@ -101,8 +101,10 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { color:
 .valign-middle{position: absolute;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
 /*标签*/
 .badge{background-color: rgba(0, 0, 0, 0.08);color: rgba(0, 0, 0, 0.7);padding: 5px 15px;border-radius: 100px;font-weight: normal;font-size: 14px;}
-.fixed-bottom{position: fixed;z-index: 9;bottom: 0;padding: 15px 0;width: 100%;background-color: #fff;border-top: .5px solid rgba(0,0,0,0.1);}
-.row.fixed-bottom .btn-primary {font-size:18px;}
+.fixed-bottom{position: fixed;z-index: 9;bottom: 0;padding: 10px 0;width: 100%;background-color: #fff;border-top: .5px solid rgba(0,0,0,0.1);}
+.row.fixed-bottom .btn {display:block;font-size:18px;border-radius: 100px;}
+.row.fixed-bottom [class*="col-"]{padding-left: 10px;padding-right: 10px;}
+.row.fixed-bottom .btn.disabled, .row.fixed-bottom .btn[disabled]{cursor: not-allowed;background-color: #ddd;border-color: #ccc;color: #333;}
 /* 公共设置样式 End */
 
 /* 导航 */

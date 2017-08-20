@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>一点签</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_286315_ndnk42ljoqn6ogvi.css">
+    <link rel="stylesheet" href="css/visa-common.css">
+    <!--[if lt IE 9]>
+      <script src="/public/js/html5shiv.min.js"></script>
+      <script src="/public/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/travel-information.css">
+    <div class="container-fluid bg-white">
+      <div class="row visa-title">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="page-title">添加新申请人</div>
+          <!-- 添加申请人 Start -->
+          <form class="form-horizontal">
+            <div class="form-group add-applicant">
+              <div class="col-xs-6">
+                <div class="input-group">
+                  <div class="input-group-addon"><label for="name"><i class="iconfont icon-wode2"></i></label></div>
+                  <input type="text" class="form-control" id="name" placeholder="输入中文姓名">
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="input-group">
+                  <select class="form-control" id="identity">
+                    <option selected value="" >请选择职业</option>
+                    <option value="1">在职人员</option>
+                    <option value="2">自由职业者</option>
+                    <option value="3">退休人员</option>
+                    <option value="4">在校学生</option>
+                    <option value="5">学龄前儿童</option>
+                  </select>
+                  <div class="input-group-addon"><label for="identity"><i class="iconfont icon-xiala"></i></label></div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="add-btn"><i class="iconfont icon-iconjia"></i> 添加</a>
+          </form>
+          <!-- 添加常用旅客 End -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-card">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="mod-item">
+            <ul class="list-group">
+              <li class="list-group-item item-title">申请人</li>
+              <li class="list-group-item">
+                <a href="" class="check-item active">
+                  <i class="iconfont icon-icon22"></i><span>孙大圣</span><em>自由职业者</em>
+                </a>
+                <a data-toggle="modal" data-target="#editorModal" class="editor-item valign-middle"><i class="iconfont icon-editor"></i></a>
+              </li>
+              <li class="list-group-item">
+                <a href="" class="check-item">
+                  <i class="iconfont icon-icon22"></i><span>孙悟空</span><em>在校学生</em>
+                </a>
+                <a data-toggle="modal" data-target="#editorModal" class="editor-item valign-middle"><i class="iconfont icon-editor"></i></a>
+              </li><li class="list-group-item">
+                <a href="" class="check-item">
+                  <i class="iconfont icon-icon22"></i><span>孙行者</span><em>退休人员</em>
+                </a>
+                <a data-toggle="modal" data-target="#editorModal" class="editor-item valign-middle"><i class="iconfont icon-editor"></i></a>
+              </li><li class="list-group-item">
+                <a href="" class="check-item">
+                  <i class="iconfont icon-icon22"></i><span>齐天大圣</span><em>学龄前儿童</em>
+                </a>
+                <a data-toggle="modal" data-target="#editorModal" class="editor-item valign-middle"><i class="iconfont icon-editor"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row fixed-bottom">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <a href="" class="btn btn-block btn-primary radius-o">确定</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-mod text-center">
+      <!-- <small>没有更多了哦</small> -->
+    </div>
+    <!-- 修改信息模态框 Start -->
+    <div class="modal fade bottom editor-modal" id="editorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">修改申请人信息</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group add-applicant">
+                      <div class="col-xs-6">
+                        <div class="input-group">
+                          <div class="input-group-addon"><label for="name"><i class="iconfont icon-wode2"></i></label></div>
+                          <input type="text" class="form-control" id="name" value="齐天大圣">
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="input-group">
+                          <select class="form-control" id="identity">
+                            <option value="" >请选择职业</option>
+                            <option value="1">在职人员</option>
+                            <option value="2">自由职业者</option>
+                            <option value="3">退休人员</option>
+                            <option value="4">在校学生</option>
+                            <option selected value="5">学龄前儿童</option>
+                          </select>
+                          <div class="input-group-addon"><label for="identity"><i class="iconfont icon-xiala"></i></label></div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn btn-primary btn-block radius-o">修改</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 修改信息模态框 End -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
